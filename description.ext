@@ -1,0 +1,37 @@
+class Header
+{
+  gameType = COOP;
+  minPlayers = 1;
+  maxPlayers = 30;
+};
+
+author = Jamie [STS] & Woolsy [STS];
+onLoadName = "Operation Scrotum";
+loadScreen = "logo.jpg";
+OnLoadMission = "We've been given intel of a Rebel arms manufacturing hideout and suspected ECM device with devastating capabilities.";
+
+class CfgSounds
+{
+// List of sounds (.ogg files without the .ogg extension)
+sounds[] = {goingdown};
+
+// Definition for each sound
+class goingdown
+{
+name = "goingdown"; // Name for mission editor
+sound[] = {\snd\goingdown.ogg, 15, 1.0};
+titles[] = {};
+};
+
+class proceed
+{
+name = "proceed"; // Name for mission editor
+sound[] = {\snd\proceed.ogg, 15, 1.0};
+titles[] = {};
+};
+
+};
+
+Respawn = 3;
+RespawnDelay = 4;
+#include "=BTC=_revive\=BTC=_respawn.h"

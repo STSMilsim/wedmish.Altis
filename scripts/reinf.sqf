@@ -1,0 +1,1 @@
+_veh = createVehicle ["B_Heli_Attack_01_F",getMarkerPos "test",["test","test"], 0, "F"]
